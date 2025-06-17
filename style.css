@@ -1575,6 +1575,23 @@ body.loaded .hero-content h2 {
   grid-template-columns: repeat(auto-fit, minmax(clamp(18rem, 35vw, 30rem), 1fr));
   gap: var(--space-lg);
 }
+.image-container {
+  width: 100%;
+  height: auto; /* or use a fixed height if needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* ensures the entire image fits */
+  display: block;
+  padding-bottom: 40px;
+}
+
 
 .project-card {
   background: var(--color-card-bg);
