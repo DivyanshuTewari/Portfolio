@@ -1562,7 +1562,7 @@ body.loaded .hero-content h2 {
 }
 
 .skill-name {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   font-weight: 600;
   color: #ffffff;
   text-align: center;
@@ -1747,7 +1747,7 @@ body.loaded .hero-content h2 {
   border: 0.0625rem solid rgba(0, 255, 255, 0.3);
   border-radius: 0.5rem;
   color: #ffffff;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   transition: all 0.3s ease;
 }
 
@@ -2234,6 +2234,23 @@ body.loaded .hero-content h2 {
   }
 }
 @media (min-width: 1024px) {
+  .project-description
+  {
+    font-size:27px;
+    text-align: justify;
+    padding-right: 20px;
+  }
+  .about-text p{
+    font-size:30px;
+  }
+  .strengths li
+  {
+    font-size:30px;
+  }
+  .strengths 
+  {
+    padding: 30px;
+  }
   .form-label
   {
     font-size: 20px;;
