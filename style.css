@@ -1779,6 +1779,10 @@ body.loaded .hero-content h2 {
   color: rgba(255, 255, 255, 0.5);
 }
 
+#message {
+  font-size: var(--font-size-md);
+}
+
 /* Footer */
 .footer {
   background: rgba(10, 10, 10, 0.9);
