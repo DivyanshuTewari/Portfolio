@@ -1680,7 +1680,7 @@ body.loaded .hero-content h2 {
   color: var(--color-primary);
   padding: 0.28125rem 0.75rem;
   border-radius: 1.25rem;
-  margin: 10px;
+  margin: 5px;
   font-size: 0.8rem;
   font-weight: 300;
   border: 0.0625rem solid rgba(0, 255, 255, 0.3);
