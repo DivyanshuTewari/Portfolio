@@ -1022,11 +1022,11 @@ a:hover {
   align-items: center;
   width:100%;
   padding: var(--space-sm) 0;
-  height: 4rem;
+  height: 1.5rem;
 }
 
 .logo {
-  font-size: clamp(1.95rem, 3.75vw, 2.5rem);
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
   font-weight: 700;
   color: var(--color-primary);
   text-decoration: none;
@@ -1037,7 +1037,7 @@ a:hover {
 .nav-items-container {
     display: flex;
     align-items: center;
-    gap: var(--space-lg);
+    gap: var(--space-xs);
 }
 
 .nav-menu {
@@ -1060,8 +1060,8 @@ a:hover {
 .nav-link {
   color: var(--color-text);
   text-decoration: none;
-  font-weight: 500;
-  font-size: var(--font-size-md);
+  font-weight: 400;
+  font-size: var(--font-size-sm);
   transition: all 0.3s ease;
   position: relative;
   padding: var(--space-xs) var(--space-sm);
@@ -1238,6 +1238,7 @@ body.loaded .hero-content h2 {
   animation: bounce 2s infinite;
   opacity:1;
   visibility:visible;
+
   transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
@@ -1249,7 +1250,7 @@ body.loaded .hero-content h2 {
 
 .scroll-down span {
   display: block;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
   margin-bottom: 0.5rem;
 }
 
@@ -1398,14 +1399,15 @@ body.loaded .hero-content h2 {
 
 .course-item i {
   color: var(--color-primary);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-md);
   flex-shrink: 0;
+  
 }
 
 .course-item span {
   color: #c0c0c0;
   text-align: left;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
 }
 
 /* Education Section */
@@ -1428,7 +1430,7 @@ body.loaded .hero-content h2 {
 .education-card {
   background: var(--color-card-bg);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg);
+  padding: var(--space-md);
   border: 0.0625rem solid var(--color-border);
   transition: all 0.3s ease;
   position: relative;
@@ -1484,7 +1486,7 @@ body.loaded .hero-content h2 {
 .education-info h3 {
   color: var(--color-primary);
   padding-bottom: var(--space-md);
-  
+  font-size:var(--font-size-md);
   margin-bottom: var(--space-xs);
 }
 
@@ -1495,7 +1497,7 @@ body.loaded .hero-content h2 {
 
 .education-duration {
   color: #c0c0c0;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
   margin-bottom: 0.5rem;
 }
 
@@ -1805,7 +1807,7 @@ body.loaded .hero-content h2 {
 /* Footer */
 .footer {
   background: rgba(10, 10, 10, 0.9);
-  padding: var(--space-lg) 0;
+  padding: var(--space-xs) 0;
   border-top: 0.0625rem solid var(--color-border);
   position: relative;
   z-index: 10;
@@ -1831,7 +1833,7 @@ body.loaded .hero-content h2 {
 
 .social-links a {
   color: #c0c0c0;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   padding:10px;
   transition: all 0.3s ease;
 
@@ -1959,6 +1961,7 @@ body.loaded .hero-content h2 {
 
 .reveal-text {
   animation: slideInUp 1s ease-out;
+  
 }
 
 .reveal-text.delay-1 {
@@ -2274,18 +2277,74 @@ body.loaded .hero-content h2 {
   }
 }
 @media (min-width: 1024px) {
+  .course-item {
+  background: var(--color-card-bg);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border: 0.0625rem solid var(--color-border);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 100px; /* Ensures consistent height */
+}
+
+.course-item:hover {
+  transform: translateY(-0.3125rem);
+  box-shadow: 0 0.625rem 1.5625rem rgba(0, 255, 255, 0.2);
+  border-color: var(--color-primary);
+}
+
+.course-item i {
+  color: var(--color-primary);
+  font-size: var(--font-size-md);
+  flex-shrink: 0;
+}
+
+.course-item span {
+  color: #c0c0c0;
+  font-size: var(--font-size-sm);
+  flex: 1;
+  text-align: left;
+}
+
+.project-links {
+  flex-shrink: 0;
+}
+
+  .hero-content h1
+  {
+    font-size:var(--font-size-xl);
+
+  }
+  .section-title
+  {
+    font-size: var(--font-size-xl);
+  }
+  .about-text h2
+  {
+    font-size: var(--font-size-lg);
+  }
+  .about-text h3
+  {
+    font-size: var(--font-size-md);
+  }
+  .hero-content .hexagon-2{
+    font-size:var(--font-size-lg);
+  }
   .project-description
   {
-    font-size:27px;
+    font-size:20px;
     text-align: justify;
     padding-right: 20px;
   }
   .about-text p{
-    font-size:30px;
+    font-size:18px;
   }
   .strengths li
   {
-    font-size:30px;
+    font-size:18px;
   }
   .strengths 
   {
@@ -2293,12 +2352,12 @@ body.loaded .hero-content h2 {
   }
   .form-label
   {
-    font-size: 20px;;
+    font-size: 20px;
   }
   .btn--primary, .btn--outline {
-    padding: 1rem 2rem; /* Increase padding */
-    font-size: 32px; /* Slightly larger font */
-    font-weight:400;
+    padding: 0.65rem 1.3rem; /* Increase padding */
+    font-weight: 400;
+    font-size: 15px; /* Slightly larger font */
     min-width: 200px; /* Minimum width for consistency */
     border-radius: 50px; /* More rounded corners */
   }
@@ -2306,7 +2365,7 @@ body.loaded .hero-content h2 {
   .btn--full-width
   {
     font-size:24px;
-    padding:0.75rem 1.5rem;
+    padding:0.60rem 1.2rem;
   }
   .container {
     max-width: var(--container-lg);
@@ -2316,19 +2375,19 @@ body.loaded .hero-content h2 {
 
   .form-label
   {
-    font-size: 20px;;
+    font-size: 18px;
   }
   .btn--primary, .btn--outline {
-    padding: 1rem 2rem; /* Increase padding */
+    padding: 0.65rem 1.3rem; /* Increase padding */
     font-weight: 400;
-    font-size: 32px; /* Slightly larger font */
+    font-size: 15px; /* Slightly larger font */
     min-width: 200px; /* Minimum width for consistency */
     border-radius: 50px; /* More rounded corners */
   }
   .btn--full-width
   {
-    font-size:24px;
-    padding:0.75rem 1.5rem;
+    font-size:20px;
+    padding:0.70rem 1.4rem;
   }
   .container {
     max-width: var(--container-xl);
