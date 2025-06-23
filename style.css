@@ -2386,11 +2386,11 @@ body.loaded .hero-content h2 {
     font-size: 18px;
   }
   .btn--primary, .btn--outline {
-    padding: 0.65rem 1.3rem; /* Increase padding */
+    padding: 0.65rem 1.3rem; 
     font-weight: 400;
-    font-size: 15px; /* Slightly larger font */
-    min-width: 200px; /* Minimum width for consistency */
-    border-radius: 50px; /* More rounded corners */
+    font-size: 15px;
+    min-width: 200px; 
+    border-radius: 50px; 
   }
   .btn--full-width
   {
