@@ -2145,7 +2145,7 @@ body.loaded .hero-content h2 {
   .nav-link {
     display: block;
     padding: var(--space-sm) 0;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
   }
   
   .about-content {
@@ -2200,6 +2200,10 @@ body.loaded .hero-content h2 {
     padding:15px;
    };
   .about-text li
+  {
+    font-size: var(--font-family-base);
+  }
+  .strengths li
   {
     font-size: var(--font-family-base);
   }
