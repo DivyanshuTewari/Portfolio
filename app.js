@@ -482,7 +482,7 @@ function showNotification(message, type = 'info') {
     }
 }
 
-function smoothScrollTo(target, duration = 800) {
+function smoothScrollTo(target, duration = 100) {
     const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - (window.innerWidth < 768 ? 60 : 80);
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
@@ -517,7 +517,7 @@ document.addEventListener('click', function (e) {
         const targetId = link.getAttribute('href');
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
-            smoothScrollTo(targetElement, 800);
+            smoothScrollTo(targetElement, 100);
         }
     }
 });
