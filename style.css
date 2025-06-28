@@ -1452,14 +1452,19 @@ body.loaded .hero-content h2 {
   .about-text li {
     font-size: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
+  .strengths
+  {
+    margin:10px;
+  }
   .strengths li {
-    font-size: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
   }
   .courses-grid span {
     font-size: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   .about-text p {
-    font-size: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size:15px;
+    margin:10px;
   }
   .container {
     padding: 0 clamp(0.5rem, 1vw, 0.75rem);
